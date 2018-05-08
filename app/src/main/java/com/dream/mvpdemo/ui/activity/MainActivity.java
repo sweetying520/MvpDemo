@@ -17,7 +17,10 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
 
     @Override
     protected void initView() {
-        mPresenter.testGetMview();
+        mPresenter.testGetMpresenter();
+        mPresenter.testDb();
+        mPresenter.testRequestNetwork();
+        mPresenter.testPreference();
     }
 
     @Override
@@ -26,7 +29,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
     }
 
     @Override
-    public void testGetMpresenter() {
-        Log.d("print", "V层的引用");
+    public void testGetMview() {
+        Log.d("print", "我是V层的引用");
     }
 }
